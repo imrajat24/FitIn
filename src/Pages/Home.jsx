@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <div>this is from home</div>
+      <div>change in the project</div>
     </>
   );
 }
