@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px% = 62.5
+
+  @include respond(big-desk) {
+    //width < 1200px ?
+    font-size: 75%; // 1rem = 12px; 9/16% = 75%
+  }
+
+  @include respond(tab-land) {
+    //width < 1200px ?
+    font-size: 56.25%; // 1rem = 9px; 9/16% = 56.25%
+  }
+
+  @include respond(tab-pot) {
+    //width < 900px ?
+    font-size: 50%; // 1rem = 8px; 8/16% = 50%
+  }
+
+  @include respond(phone) {
+    //width < 900px ?
+    font-size: 43.75%; // 1rem = 7px; 7/16% = 43.75%
+  }
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    //width < 1200px ?
+    max-width: 100rem;
+  }
+
+  @include respond(phone-med) {
+    //width < 1200px ?
+    max-width: 70rem;
+  }
+
+  @include respond(phone) {
+    //width < 1200px ?
+    max-width: 100%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}

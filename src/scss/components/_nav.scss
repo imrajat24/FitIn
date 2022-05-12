@@ -1,0 +1,9 @@
+.nav {
+  // background-color: black;
+  display: flex;
+  justify-content: space-between;
+  &_logo {
+    display: inline-block;
+    border: 1px solid black;
+  }
+}
