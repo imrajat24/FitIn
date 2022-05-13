@@ -35,7 +35,7 @@ html {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-
+  // border: 1px solid black;
   @include respond(tab-land) {
     //width < 1200px ?
     max-width: 100rem;

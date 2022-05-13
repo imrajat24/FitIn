@@ -1,9 +1,17 @@
 .nav {
-  // background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
   &_logo {
     display: inline-block;
-    border: 1px solid black;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  &_profile {
+    img {
+      width: 60%;
+      border-radius: 50%;
+    }
   }
 }

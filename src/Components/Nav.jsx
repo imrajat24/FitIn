@@ -4,7 +4,7 @@ const Nav = () => {
     <div className="row">
       <div className="nav">
         <div className="nav_logo">FitIn</div>
-        <div className="nav_Profile">
+        <div className="nav_profile">
           <img src={profile} alt="" />
         </div>
       </div>
