@@ -1,0 +1,33 @@
+.cardContainer {
+  &_searchBar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &-input {
+      border: none;
+      background-color: $color-primary;
+      border-radius: 2rem;
+      font-family: inherit;
+      color: white;
+      padding: 1rem 0;
+      padding-left: 2.5rem;
+      width: $input-width;
+
+      &::placeholder {
+        color: white;
+        opacity: 0.8;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &-img {
+      position: absolute;
+      left: calc(50% + $input-width/2.5);
+      transform: translateY(-50%);
+      width: 2rem;
+      top: 50%;
+      color: white;
+    }
+  }
+}
