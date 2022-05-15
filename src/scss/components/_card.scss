@@ -23,7 +23,10 @@
   }
   &_tags {
     display: inline-block;
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
     span {
       color: $color-primary;
       font-size: 1.2rem;
@@ -32,9 +35,6 @@
       border-radius: 2rem;
       background-color: $color-primary;
       color: white;
-      &:not(:first-child) {
-        margin-left: 1rem;
-      }
     }
   }
 }

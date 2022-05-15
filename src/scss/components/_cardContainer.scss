@@ -24,8 +24,10 @@
     }
     .input-2 {
       width: 20%;
-      @include respond(phone) {
+      @include respond(tab-pot) {
         width: 40%;
+      }
+      @include respond(phone) {
         &::placeholder {
           font-size: 1.2rem;
         }
@@ -34,6 +36,9 @@
     &-img {
       position: absolute;
       left: calc($input-width - 4%);
+      @include respond(tab-pot) {
+        left: calc($input-width - 5%);
+      }
       @include respond(phone) {
         left: calc($input-width - 6%);
       }
