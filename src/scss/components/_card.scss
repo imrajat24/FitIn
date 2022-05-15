@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  &_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    video {
+      border-radius: 2rem 2rem 0 0;
+      height: 100%;
+    }
+  }
+  &_heading {
+    margin: 2rem 0;
+    h3 {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+  &_tags {
+    display: inline-block;
+    margin-bottom: 2rem;
+    span {
+      color: $color-primary;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid $color-primary;
+      border-radius: 2rem;
+      background-color: $color-primary;
+      color: white;
+      &:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

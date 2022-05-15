@@ -1,8 +1,9 @@
 .cardContainer {
-  &_searchBar {
+  &_searchBar,
+  &_pageNum {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     &-input {
       border: none;
       background-color: $color-primary;
@@ -21,13 +22,35 @@
         outline: none;
       }
     }
+    .input-2 {
+      width: 20%;
+    }
     &-img {
       position: absolute;
-      left: calc(50% + $input-width/2.5);
+      left: calc($input-width - 4%);
       transform: translateY(-50%);
       width: 2rem;
       top: 50%;
       color: white;
     }
+  }
+  &_heading {
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color-primary;
+      margin-top: 3rem;
+    }
+  }
+  &_content {
+    margin-top: 2rem;
+    max-height: 40rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 40%));
+    gap: 3rem;
+    padding: 2rem 2rem 2rem 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
