@@ -28,7 +28,7 @@ const CardContainer = ({
         )
         .then((result) => {
           setResult(result.data.results);
-          console.log(result.data.results);
+          // console.log(result.data.results);
         });
     } else {
       setResult([]);
@@ -66,11 +66,13 @@ const CardContainer = ({
           </h2>
         )}
       </div>
-      <div className="cardContainer_content">
-        {result.map((data) => (
-          <Card url={data.video} heading={data.heading} tags={data.tags} />
-        ))}
-      </div>
+      {result ? (
+        <div className="cardContainer_content">
+          {result.map((data) => (
+            <Card url={data.video} heading={data.heading} tags={data.tags} />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };

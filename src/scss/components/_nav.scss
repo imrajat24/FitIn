@@ -13,6 +13,10 @@
   &_heading {
     color: $color-primary;
     font-size: 1.4rem;
+    @include respond(phone-med) {
+      display: none;
+      pointer-events: none;
+    }
   }
   &_profile {
     text-align: right;

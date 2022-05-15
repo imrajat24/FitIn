@@ -36,6 +36,9 @@ html {
   max-width: 114rem;
   margin: 0 auto;
   // border: 1px solid black;
+  @include respond(big-desk) {
+    max-width: 130rem;
+  }
   @include respond(tab-land) {
     //width < 1200px ?
     max-width: 100rem;
@@ -49,6 +52,7 @@ html {
   @include respond(phone) {
     //width < 1200px ?
     max-width: 100%;
+    padding: 0 3rem;
   }
 }
 

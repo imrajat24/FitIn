@@ -24,10 +24,19 @@
     }
     .input-2 {
       width: 20%;
+      @include respond(phone) {
+        width: 40%;
+        &::placeholder {
+          font-size: 1.2rem;
+        }
+      }
     }
     &-img {
       position: absolute;
       left: calc($input-width - 4%);
+      @include respond(phone) {
+        left: calc($input-width - 6%);
+      }
       transform: translateY(-50%);
       width: 2rem;
       top: 50%;
@@ -44,10 +53,16 @@
   }
   &_content {
     margin-top: 2rem;
-    max-height: 40rem;
+    max-height: 58vh;
+    @include respond(tab-pot) {
+      max-height: 100%;
+    }
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 40%));
+    @include respond(phone) {
+      grid-template-columns: 100%;
+    }
     gap: 3rem;
     padding: 2rem 2rem 2rem 0;
     overflow-y: scroll;
